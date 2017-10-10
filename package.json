@@ -1,0 +1,22 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "test webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmyShieh/webpack.git"
+  },
+  "author": "aliveAmy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmyShieh/webpack/issues"
+  },
+  "homepage": "https://github.com/AmyShieh/webpack#readme",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
+}
