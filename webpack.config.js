@@ -16,6 +16,9 @@ module.exports = {
     },
     plugins: [],
     devServer: {
-
+        contentBase:path.resolve(__dirname,"dist"),
+        compress:true,
+        port:7190,
+        host:"localhost"
     }
 }
