@@ -1,0 +1,9 @@
+body{
+    background-color: pink;
+    color: #333;
+}
+#pic{
+    background: url(../images/IMG_20151004_174549.jpg);
+    width: 250px;
+    height: 193px;
+}
