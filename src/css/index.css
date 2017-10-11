@@ -6,4 +6,12 @@ body{
     background: url(../images/IMG_20151004_174549.jpg);
     width: 250px;
     height: 193px;
+    transform: rotate(30deg);
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+}
+#aaa{
+    width: 250px;
+    height: 193px;
+    transform: rotate(30deg);
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.25);
 }
