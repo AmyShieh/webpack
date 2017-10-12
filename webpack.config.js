@@ -11,6 +11,7 @@ var website = {
     publicPath:"http://localhost:7190/"
 };
 module.exports = {
+    devtool:'source-map',
     entry:{
         entry:'./src/entry.js'
     },
@@ -56,7 +57,8 @@ module.exports = {
                     },{loader:"less-loader"}],
                     fallback:"style-loader"
                 })
-            },{
+            },
+            {
                 test:/\.scss/,
                 use:extractTextPlugin.extract({
                     fallback:"style-loader",
@@ -65,6 +67,13 @@ module.exports = {
                         {loader:"sass-loader"}
                     ]
                 })
+            },
+            {
+                test:/\.(jsx|js)$/,
+                use: {
+                    loader:"babel-loader",
+                },
+                exclude:/node_modules/
             }
         ]
     },

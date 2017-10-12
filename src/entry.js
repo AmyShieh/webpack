@@ -4,4 +4,7 @@
 import css from './css/index.css';
 import less from './css/black.less';
 import  sass from './css/s.scss';
-document.getElementById("title").innerHTML = "test change"
+{
+    let test = "test change"
+    document.getElementById("title").innerHTML = test;
+}
