@@ -5,6 +5,6 @@ import css from './css/index.css';
 import less from './css/black.less';
 import  sass from './css/s.scss';
 {
-    let test = "test change"
+    let test = "test change aadsfasdf"
     document.getElementById("title").innerHTML = test;
 }

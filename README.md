@@ -8,10 +8,16 @@ webpack.config.js需要自己建立
     1. 入口文件 entry:{}
     2. 出口文件 output:{}
     3. 插件数组 plugins:[]
-    4.启动服务 devServer
-    5.配置项 module：{}
+    4. 启动服务 devServer
+    5. 配置项 module：{}
     
-    其中注意下出口文件和启动服务
+首先展示一个常规的webpack.config.js模板
+
+```
+    const webpack = require('webpack');
+```
+    
+其中注意下出口文件和启动服务
 ```
     output:{
         path:path.resolve(__dirname,"dist"),

@@ -18,7 +18,7 @@ module.exports = {
     output:{
         path:path.resolve(__dirname,'dist'),
         filename: "[name].js",
-        publicPath: website.publicPath
+        // publicPath: website.publicPath
     },
     module: {
         rules:[
@@ -45,10 +45,10 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test:/\.(htm|html)$/i,
-                use:['html-withimg-loader']
-            },
+            // {
+            //     test:/\.(htm|html)$/i,
+            //     use:['html-withimg-loader']
+            // },
             {
                 test:/\.less$/,
                 use:extractTextPlugin.extract({
@@ -80,21 +80,23 @@ module.exports = {
     plugins: [
         // new uglify()
         new htmlPlugin({
-            minify:{
-                removeAttributeQuotes:true
-            },
-            hash:true,
+            // minify:{
+            //     removeAttributeQuotes:true
+            // },
+            // hash:true,
             template:'./src/index.html'
         }),
         new extractTextPlugin("css/index.css"),
-        new purifyCssPlugin({
-            paths:glob.sync(path.join(__dirname,"src/*.html"))
-        })
+        // new purifyCssPlugin({
+        //     paths:glob.sync(path.join(__dirname,"src/*.html"))
+        // })
     ],
     devServer: {
-        contentBase:path.resolve(__dirname,"dist"),
+        // contentBase:path.resolve(__dirname,"dist"),
+        contentBase: false,
         compress:true,
-        port:7190,
+        hot: false,
+        port:7188,
         host:"localhost"
     }
 }
