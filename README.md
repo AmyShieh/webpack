@@ -46,4 +46,21 @@ devServer
 生产环境：
 要求必须js压缩
 
+```angular2html
+    module.exports = {
+        mode: "development, production 或 none"
+        entry: "./index.js",
+        output: {
+            path: path.resolve(__dirname, "dist");
+            filename: "XXX"
+        },
+        module: {
+            rules: [
+                {test: /\.vue$/, use: 'xxx-loader'}
+            ]
+        },
+        plugins: []
+    }
+```
+
 
